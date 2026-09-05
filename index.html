@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Kelola Jadwal Kuliah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== LAYAR LOGIN ====== -->
+  <div id="loginScreen">
+    <main class="board">
+      <div class="login-card">
+        <h2>Masuk Admin</h2>
+        <p>Halaman ini hanya untuk pengelola jadwal kuliah.</p>
+        <form id="loginForm">
+          <div class="field">
+            <label for="passwordInput">Password</label>
+            <input type="password" id="passwordInput" required autofocus>
+          </div>
+          <p class="error-msg" id="loginError"></p>
+          <button type="submit" class="btn btn--primary" style="width:100%;">Masuk</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- ====== LAYAR ADMIN ====== -->
+  <div id="adminScreen" style="display:none;">
+    <main class="board admin-shell">
+      <div class="admin-toolbar">
+        <div>
+          <p class="board__kicker">Panel Pengelola</p>
+          <h1 style="font-size:26px;">Kelola Jadwal Kuliah</h1>
+        </div>
+        <button id="logoutBtn" class="btn btn--ghost">Keluar</button>
+      </div>
+
+      <div class="panel">
+        <h2 style="font-size:15px; margin-bottom:12px;">Sinkronkan Data</h2>
+        <div class="io-bar">
+          <label class="btn btn--ghost btn--small" style="cursor:pointer;">
+            Impor jadwal.json
+            <input type="file" id="importInput" accept="application/json" style="display:none;">
+          </label>
+          <button id="exportBtn" class="btn btn--primary btn--small">Unduh jadwal.json</button>
+          <span class="status-pill" id="statusPill"></span>
+        </div>
+      </div>
+
+      <div class="nav-row">
+        <span id="backBtnSlot"></span>
+        <nav class="trail" id="trail" aria-label="Alur pengelolaan"></nav>
+      </div>
+
+      <div id="boardMain"></div>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Pengembangan Diri",
+    "dosen": "Wire Bagye, S.Kom., M.Kom.",
+    "ruangan": "Ruang 2",
+    "hari": "Senin",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "2",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Pendidikan agama",
+    "dosen": "Hasyim Asyari, S.IP., M.H.",
+    "ruangan": "Ruang 1",
+    "hari": "Senin",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "3",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Pengembangan Diri",
+    "dosen": "Wire Bagye, S.Kom., M.Kom.",
+    "ruangan": "Ruang 2",
+    "hari": "Senin",
+    "jamMulai": "14:10",
+    "jamSelesai": "15:50"
+  },
+  {
+    "id": "4",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "Pemrograman Dasar",
+    "dosen": "Hairul Fahmi, S.Kom., M.Kom.",
+    "ruangan": "Lab 2",
+    "hari": "Senin",
+    "jamMulai": "14:10",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788613409620",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Pendidikan agama",
+    "dosen": "Hasyim Asyari, S.IP., M.H.",
+    "ruangan": "Ruang 1",
+    "hari": "Senin",
+    "jamMulai": "14:10",
+    "jamSelesai": "15:50"
+  },
+  {
+    "id": "1788613936653",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "Pengantar Teknologi Informasi",
+    "dosen": "Maemun Saleh, S.Kom.",
+    "ruangan": "Ruang 1",
+    "hari": "Senin",
+    "jamMulai": "12:30",
+    "jamSelesai": "14:10"
+  }
+]
