@@ -64,5 +64,203 @@
     "hari": "Senin",
     "jamMulai": "12:30",
     "jamSelesai": "14:10"
+  },
+  {
+    "id": "1788621833176",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Kalkulus",
+    "dosen": "Rudi Mahsun, S.Si., M.Kom.",
+    "ruangan": "Ruang 1",
+    "hari": "Rabu",
+    "jamMulai": "12:30",
+    "jamSelesai": "14:10"
+  },
+  {
+    "id": "1788621930704",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Pendidikan Pancasila",
+    "dosen": "asyim Asyari, S.IP., M.H.",
+    "ruangan": "Ruang 2",
+    "hari": "Rabu",
+    "jamMulai": "14:10",
+    "jamSelesai": "15:50"
+  },
+  {
+    "id": "1788622004552",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Algoritma dan Pemrograman",
+    "dosen": "Saikin, S.Kom, M.Kom",
+    "ruangan": "Lab 2",
+    "hari": "Kamis",
+    "jamMulai": "09:00",
+    "jamSelesai": "12:20"
+  },
+  {
+    "id": "1788622052736",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Pengantar Teknologi Informasi dan Komunikasi (PTIK)",
+    "dosen": "Maemun Saleh, S.Kom.",
+    "ruangan": "Ruang 3",
+    "hari": "Kamis",
+    "jamMulai": "12:30",
+    "jamSelesai": "14:27"
+  },
+  {
+    "id": "1788622108799",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Bahasa Inggris",
+    "dosen": "Sudiani, M.Pd.",
+    "ruangan": "Ruang 1",
+    "hari": "Kamis",
+    "jamMulai": "14:10",
+    "jamSelesai": "15:50"
+  },
+  {
+    "id": "1788622168913",
+    "jurusan": "TI",
+    "kelas": "A",
+    "mataKuliah": "Matematika Diskrit",
+    "dosen": "Wafiah Murniati, S.T., M.T.",
+    "ruangan": "Ruang 6",
+    "hari": "Jumat",
+    "jamMulai": "14:00",
+    "jamSelesai": "16:30"
+  },
+  {
+    "id": "1788622248242",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Matematika Diskrit",
+    "dosen": "Wafiah Murniati, S.T., M.T.",
+    "ruangan": "Ruang 2",
+    "hari": "Selasa",
+    "jamMulai": "15:00",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788622329239",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Algoritma dan Pemrograman",
+    "dosen": "Lalu Zhafran Farras Rahman, S.Kom",
+    "ruangan": "Lab 2",
+    "hari": "Rabu",
+    "jamMulai": "09:00",
+    "jamSelesai": "12:20"
+  },
+  {
+    "id": "1788622392459",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Pendidikan Pancasila",
+    "dosen": "Hasyim Asyari, S.IP., M.H.",
+    "ruangan": "Ruang 2",
+    "hari": "Rabu",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788622463865",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Kalkulus",
+    "dosen": "Rudi Mahsun, S.Si., M.Kom.",
+    "ruangan": "Ruang 2",
+    "hari": "Kamis",
+    "jamMulai": "12:30",
+    "jamSelesai": "14:10"
+  },
+  {
+    "id": "1788622514973",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Pengantar Teknologi Informasi dan Komunikasi (PTIK)",
+    "dosen": "Maemun Saleh, S.Kom.",
+    "ruangan": "Ruang 2",
+    "hari": "Kamis",
+    "jamMulai": "14:10",
+    "jamSelesai": "15:50"
+  },
+  {
+    "id": "1788622569060",
+    "jurusan": "TI",
+    "kelas": "B",
+    "mataKuliah": "Bahasa Inggris",
+    "dosen": "Sudiani, M.Pd.",
+    "ruangan": "Ruang 2",
+    "hari": "Kamis",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788622683408",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "Pendidikan Agama",
+    "dosen": "HasyimAsyari,S.IP.,M.H.",
+    "ruangan": "Ruang 1",
+    "hari": "Selasa",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788622763787",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "MatematikaDiskrit",
+    "dosen": "WafiahMurniati,S.T.,M.T.",
+    "ruangan": "Ruang 1",
+    "hari": "Rabu",
+    "jamMulai": "14:10",
+    "jamSelesai": "16:40"
+  },
+  {
+    "id": "1788622827354",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "BahasaInggris",
+    "dosen": "MaulanaAshari,S.Kom.,M.Kom",
+    "ruangan": "Ruang 1",
+    "hari": "Kamis",
+    "jamMulai": "12:30",
+    "jamSelesai": "14:10"
+  },
+  {
+    "id": "1788622884366",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "PendidikanPancasila",
+    "dosen": "HasyimAsyari,S.IP.,M.H.",
+    "ruangan": "Ruang 1",
+    "hari": "Kamis",
+    "jamMulai": "15:50",
+    "jamSelesai": "17:30"
+  },
+  {
+    "id": "1788622940137",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "Pengantar Budaya Daerah",
+    "dosen": "Ir.H.Ambara",
+    "ruangan": "Ruang 1",
+    "hari": "Jumat",
+    "jamMulai": "14:00",
+    "jamSelesai": "15:40"
+  },
+  {
+    "id": "1788622997827",
+    "jurusan": "SI",
+    "kelas": null,
+    "mataKuliah": "Pengantar Bisnis",
+    "dosen": "MuhamadRodi,S.Kom,M.Kom.",
+    "ruangan": "Ruang 1",
+    "hari": "Jumat",
+    "jamMulai": "15:40",
+    "jamSelesai": "17:20"
   }
 ]
