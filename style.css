@@ -1,19 +1,21 @@
 /* ===================================================================
-   Papan Jadwal — v2, gaya "glass noticeboard"
-   Latar gradasi gelap berlapis + kartu kaca (glassmorphism), dengan
-   aksen amber/teal yang sama seperti versi awal, tapi lebih hidup:
-   blur, glow tipis, dan satu momen animasi saat pindah langkah.
+   Papan Jadwal — v3, gaya "glass noticeboard"
+   Latar gradasi gelap berlapis + kartu kaca (glassmorphism).
 
-   Warna:  #0F1526 → #1B2140 (gradient latar)   amber #E3AE55 → #C67A2E
-           teal #58A99B     kaca rgba(255,255,255,.05)   rust #D25B41
-   Font:   "Fraunces" untuk judul, "Inter" untuk isi/tabel
+   Layar awal (netral): perpaduan biru muda, kuning/keemasan, hijau,
+   abu-abu, cokelat/kuning tua, putih, di atas dasar hampir hitam.
+   Setelah pilih jurusan, latar berganti jadi nuansa biru (TI) atau
+   kuning-cokelat (SI), tetap gelap supaya tulisan & warna jadwal
+   tetap kontras dan tidak tabrakan.
+
+   Font: "Fraunces" untuk judul, "Inter" untuk isi/tabel
    =================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-a: #0f1526;
-  --bg-b: #1b2140;
+  --bg-a: #101215;
+  --bg-b: #1b1e24;
   --glass: rgba(255, 255, 255, 0.045);
   --glass-hover: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.10);
@@ -29,27 +31,49 @@
   --radius-sm: 10px;
 
   /* --accent adalah warna tema yang berubah sesuai jurusan yang dipilih.
-     Default (belum memilih jurusan) memakai warna amber netral. */
+     Default (belum memilih jurusan) memakai warna amber/keemasan netral. */
   --accent: var(--amber);
   --accent-deep: var(--amber-deep);
   --accent-glow: rgba(227, 174, 85, 0.16);
   --accent-glow-strong: rgba(227, 174, 85, 0.35);
+
+  /* mesh latar layar awal: biru muda, keemasan, hijau, cokelat, putih, abu-abu */
+  --bg-mesh:
+    radial-gradient(620px 460px at 6% 2%, rgba(110, 198, 255, 0.16), transparent 60%),
+    radial-gradient(580px 480px at 93% 6%, rgba(255, 205, 90, 0.18), transparent 58%),
+    radial-gradient(640px 520px at 88% 90%, rgba(70, 170, 120, 0.15), transparent 60%),
+    radial-gradient(520px 440px at 8% 94%, rgba(150, 104, 55, 0.16), transparent 60%),
+    radial-gradient(720px 520px at 50% 40%, rgba(255, 255, 255, 0.035), transparent 65%),
+    radial-gradient(920px 720px at 50% 122%, rgba(150, 155, 165, 0.10), transparent 62%),
+    linear-gradient(160deg, #101215, #1b1e24 65%, #14161b 100%);
 }
 
-/* Tema Teknik Informatika — biru */
+/* Tema Teknik Informatika — nuansa biru */
 body.theme-ti {
   --accent: #4c8dff;
   --accent-deep: #2f63c9;
   --accent-glow: rgba(76, 141, 255, 0.20);
   --accent-glow-strong: rgba(76, 141, 255, 0.38);
+  --bg-mesh:
+    radial-gradient(760px 560px at 8% -6%, rgba(76, 141, 255, 0.22), transparent 58%),
+    radial-gradient(660px 560px at 96% 12%, rgba(140, 190, 255, 0.13), transparent 60%),
+    radial-gradient(700px 520px at 15% 95%, rgba(150, 155, 165, 0.08), transparent 60%),
+    radial-gradient(720px 540px at 55% 50%, rgba(255, 255, 255, 0.03), transparent 68%),
+    linear-gradient(160deg, #0b0f18, #101a30 70%, #0c1220 100%);
 }
 
-/* Tema Sistem Informasi — kuning */
+/* Tema Sistem Informasi — nuansa kuning/keemasan & cokelat tua */
 body.theme-si {
   --accent: #f0c743;
   --accent-deep: #d9a62a;
   --accent-glow: rgba(240, 199, 67, 0.22);
   --accent-glow-strong: rgba(240, 199, 67, 0.40);
+  --bg-mesh:
+    radial-gradient(760px 560px at 8% -6%, rgba(240, 199, 67, 0.22), transparent 58%),
+    radial-gradient(660px 560px at 96% 14%, rgba(191, 140, 58, 0.18), transparent 60%),
+    radial-gradient(700px 520px at 15% 95%, rgba(150, 145, 130, 0.08), transparent 60%),
+    radial-gradient(720px 540px at 55% 50%, rgba(255, 255, 255, 0.03), transparent 68%),
+    linear-gradient(160deg, #14100a, #201a0d 70%, #171209 100%);
 }
 
 * { box-sizing: border-box; }
@@ -64,14 +88,10 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--bg-a);
-  background-image:
-    radial-gradient(ellipse 900px 600px at 8% -5%, var(--accent-glow), transparent 55%),
-    radial-gradient(ellipse 800px 700px at 95% 15%, rgba(88, 169, 155, 0.14), transparent 55%),
-    radial-gradient(ellipse 1000px 800px at 50% 120%, rgba(88, 90, 169, 0.18), transparent 60%),
-    linear-gradient(160deg, var(--bg-a), var(--bg-b) 70%);
+  background-image: var(--bg-mesh);
   background-attachment: fixed;
-  transition: background-image 0.5s ease;
 }
+
 
 h1, h2, h3 {
   font-family: 'Fraunces', Georgia, serif;
